@@ -1,8 +1,8 @@
 ---
+import MainLayout from "../layouts/main-layout.astro"
 import "../styles/style.css"
 import Card from "../components/Card.astro"
 import Navigation from "../components/Navigation.astro"
-
 ---
 
 <html lang="en">
@@ -14,10 +14,12 @@ import Navigation from "../components/Navigation.astro"
 		<title>Astro</title>
 	</head>
 	<body>
+		<MainLayout>
 		<h1>Astro</h1>
 		<Navigation></Navigation>
 		<Card header="Hej Verden" text="du er dum"/>
 		<Card header="Hej Taber" text="du er sej"/>
 		<Card header="Hej fætter" text="du er swag"/>
+	</MainLayout>
 	</body>
 </html>
